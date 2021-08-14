@@ -1,4 +1,5 @@
 # simple_shell
+
 ## Project requirements.
 
 - Allowed editors: vi, vim, emacs.
@@ -14,36 +15,36 @@
 
 ## List of allowed functions and system calls.
 
-- ```access```
-- ```chdir```
-- ```close```
-- ```closedir```
-- ```execve```
-- ```exit```
-- ```_exit```
-- ```fflush```
-- ```fork```
-- ```free```
-- ```getcwd```
-- ```getline```
-- ```isatty```
-- ```kill```
-- ```malloc```
-- ```open```
-- ```opendir```
-- ```perror```
-- ```read```
-- ```readdir```
-- ```signal```
-- ```stat```
-- ```lstat```
-- ```fstat```
-- ```strtok```
-- ```wait```
-- ```waitpid```
-- ```wait3```
-- ```wait4```
-- ```write```
+- `access`
+- `chdir`
+- `close`
+- `closedir`
+- `execve`
+- `exit`
+- `_exit`
+- `fflush`
+- `fork`
+- `free`
+- `getcwd`
+- `getline`
+- `isatty`
+- `kill`
+- `malloc`
+- `open`
+- `opendir`
+- `perror`
+- `read`
+- `readdir`
+- `signal`
+- `stat`
+- `lstat`
+- `fstat`
+- `strtok`
+- `wait`
+- `waitpid`
+- `wait3`
+- `wait4`
+- `write`
 
 ### Compilation and Execution
 
@@ -53,9 +54,11 @@ To execute **Bibalve**, compile all `.c` files in the repository and execute the
 gcc *.c -o hsh
 ./hsh
 ```
+
 _Note_: there are two ways of using the command interpreter:
 
 #### Interactive mode:
+
 ```
  $ ./hsh
 ($) /bin/ls
@@ -64,7 +67,9 @@ hsh main.c shell.c
 ($) exit
 $
 ```
+
 #### Non-interactive mode:
+
 ```
 $ echo "/bin/ls" | ./hsh
 hsh main.c shell.c test_ls_2
@@ -80,12 +85,12 @@ $
 ```
 
 ### Builtins
+
 There are two builtins programmed into Bivalve. Below is a description and use for each builtin.
 
-* `env` - The env command is a command that tells the shell program to display all of the environment variables with their values. It is a    way to access those values through the shell.
+- `env` - The env command is a command that tells the shell program to display all of the environment variables with their values. It is a way to access those values through the shell.
 
-* `exit` - If you wish to exit out of the shell the user can use the builtin `exit`.
-
+- `exit` - If you wish to exit out of the shell the user can use the builtin `exit`.
 
 ### Command Execution.
 
@@ -98,19 +103,20 @@ If either of the above searches was successful, the shell executes the named pro
 
 ![Alt](shell.svg)
 
-| File Name | Description and contents |
-| --- | --- |
-| [man_1_simple_shell](man_1_simple_shell) | This is the manpage for the Bivalve shell, this will help us know how to use the shell and the many uses of it, in here we can find examples and the correct sintaxis of the commands.|
-| [shell.h](shell.h) |This is the header file where we can find all the prototypes of our functions.|
-| [01-prompt.c](01-prompt.c) |main function - Prints the prompt in a loop and calls the functions to get an input line and handle the parameters.|
-| [02-tokenize.c](02-tokenize.c) |tokenize - Receives a line as an input and stores space separated tokens (strings)|
-| [03-strfunctions.c](03-strfunctions.c) |_strcmp, _strcpy, _strlen and _strncmp. These customized str functions compare, copy and return the length of strings.|
-| [04-envirun.c](04-envirun.c) |_printenv, _getenv. These customized functions print thr 'env' command and get an enviromental variable.|
-| [05-freeargv.c](05-freeargv.c) |Function to free argv (splitted tokens grid).|
-| [06-exec.c](06-exec.c) |Receives an splitted line of strings and executes the program and it's arguments.|
-| [07-linecheck.c](07-linecheck.c) |Previous line check.|
-| [08-searchpath.c](08-searchpath.c) |Checks if command exists as builtin or tokenizes $PATH to find executable file.|
-
+| File Name                                | Description and contents                                                                                                                                                               |
+| ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [man_1_simple_shell](man_1_simple_shell) | This is the manpage for the Bivalve shell, this will help us know how to use the shell and the many uses of it, in here we can find examples and the correct sintaxis of the commands. |
+| [shell.h](shell.h)                       | This is the header file where we can find all the prototypes of our functions.                                                                                                         |
+| [01-prompt.c](01-prompt.c)               | main function - Prints the prompt in a loop and calls the functions to get an input line and handle the parameters.                                                                    |
+| [02-tokenize.c](02-tokenize.c)           | tokenize - Receives a line as an input and stores space separated tokens (strings)                                                                                                     |
+| [03-strfunctions.c](03-strfunctions.c)   | \_strcmp, \_strcpy, \_strlen and \_strncmp. These customized str functions compare, copy and return the length of strings.                                                             |
+| [04-envirun.c](04-envirun.c)             | \_printenv, \_getenv. These customized functions print thr 'env' command and get an enviromental variable.                                                                             |
+| [05-freeargv.c](05-freeargv.c)           | Function to free argv (splitted tokens grid).                                                                                                                                          |
+| [06-exec.c](06-exec.c)                   | Receives an splitted line of strings and executes the program and it's arguments.                                                                                                      |
+| [07-linecheck.c](07-linecheck.c)         | Previous line check.                                                                                                                                                                   |
+| [08-searchpath.c](08-searchpath.c)       | Checks if command exists as builtin or tokenizes $PATH to find executable file.                                                                                                        |
 
 ## Authors
-[HASSAN JUMA](okothhassanjuma@gmail.com)
+
+[HASSAN JUMA](okothhassanjuma@gmail.com) |
+[PAUL TOBILOBA OKE](https://linktr.ee/tobyCodes)
