@@ -1,7 +1,7 @@
-.TH BIVALVE 1  "November 2020" "1.0" "Holberton School - Simple_Shell"
+.TH INDOMIE 1  "August 2021" "1.0" "ALX - Simple_Shell"
 
 .SH NAME
-.B Bivalve Shell (hsh)
+.B Indomie Shell (hsh)
 - command interpreter.
 
 .SH SYNOPSIS
@@ -13,7 +13,7 @@
 .PP
 .B
 .SH DESCRIPTION
-The Bivalve shell is a command that reads lines from the terminal, interprets them, and generally executes other commands. It is the \
+The Indomie shell is a command that reads lines from the terminal, interprets them, and generally executes other commands. It is the \
 program that is running when a user logs into the system. The shell implements a language \ 
 that has flow control contructs, a macro facility that provides a variety of features in addition to data\storage, along with the built in history and line editing capabilities. It also has features to \
 aid interactive use and has the advantage that the interpretative language is common to both interactive\ and non-interactive use (shell scripts).
@@ -27,27 +27,27 @@ $PATH:
 
 
 .PP
-Bivalve shell has two builtin commands. It also integrates with other commands \
-that can be located in the PATH. The output of Bivalve shell is to replicate \
+Indomie shell has two builtin commands. It also integrates with other commands \
+that can be located in the PATH. The output of Indomie shell is to replicate \
 exactly as the shell 'sh' or 'bash'.
 .PP
 .B $ man bash
-. Bivalve Shell\
-The Bivalve shell takes commands from files, shell scripts and user input in both interactive or non-interactive mode.
+. Indomie Shell\
+The Indomie shell takes commands from files, shell scripts and user input in both interactive or non-interactive mode.
 
 .SH INITIALIZATION
-To use the Bivalve shell the user needs to compile \
+To use the Indomie shell the user needs to compile \
 using: gcc. Then run the output file by calling it whether \
 by the output name it was given. 
 .PP
 .B EX: $ ./some_name or $ a./a.out.\
 .PP
-.SH The Bivalve shell will compile with the following:
+.SH The Indomie shell will compile with the following:
 gcc -Wall -Wextra -Werror -pedantic *.c -o hsh
 
 
 .PP
-If the user inputs pipelines or calls non-interactive mode, the Bivalve shell should\
+If the user inputs pipelines or calls non-interactive mode, the Indomie shell should\
 function and execute said commands. An example of non-interactive mode input:
 .PP
 .B $ echo 'ls -a' | ./hsh
@@ -61,7 +61,7 @@ function and execute said commands. An example of non-interactive mode input:
 
 
 .SH OPTIONS
-The Bivalve shell does not take any options but does utilize \
+The Indomie shell does not take any options but does utilize \
 extern char **environ.
 
 .B
@@ -80,3 +80,5 @@ exit - To exit out of the shell user can utilize exit. Exits program with status
 .SH BUGS
 No Known Bugs
 .SH AUTHORS
+@Toby-Codes [Paul Oke] <twiseas9ice@gmail.com>
+@HASSAN1A
