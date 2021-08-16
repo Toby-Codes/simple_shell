@@ -1,4 +1,4 @@
-.TH INDOMIE 1  "November 2020" "1.0" "Holberton School - Simple_Shell"
+.TH INDOMIE 1  "August 2021" "1.0" "ALX - Simple_Shell"
 
 .SH NAME
 .B Indomie Shell (hsh)
@@ -80,3 +80,5 @@ exit - To exit out of the shell user can utilize exit. Exits program with status
 .SH BUGS
 No Known Bugs
 .SH AUTHORS
+@Toby-Codes [Paul Oke] <twiseas9ice@gmail.com>
+@HASSAN1A

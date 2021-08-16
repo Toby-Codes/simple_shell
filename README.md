@@ -48,7 +48,7 @@
 
 ### Compilation and Execution
 
-To execute **Bibalve**, compile all `.c` files in the repository and execute the resulting executable file:
+To execute **Indomie**, compile all `.c` files in the repository and execute the resulting executable file:
 
 ```
 gcc *.c -o hsh
@@ -86,7 +86,7 @@ $
 
 ### Builtins
 
-There are two builtins programmed into Bivalve. Below is a description and use for each builtin.
+There are two builtins programmed into Indomie. Below is a description and use for each builtin.
 
 - `env` - The env command is a command that tells the shell program to display all of the environment variables with their values. It is a way to access those values through the shell.
 
@@ -94,9 +94,9 @@ There are two builtins programmed into Bivalve. Below is a description and use f
 
 ### Command Execution.
 
-After receiving a command, **Bibalve** tokenizes it into words using `" "` as a delimiter. The first word is considered the command and all remaining words are considered arguments.
+After receiving a command, **Indomie** tokenizes it into words using `" "` as a delimiter. The first word is considered the command and all remaining words are considered arguments.
 The shell searches for the command in the list of shell builtins. If there exists a builtin with that name, the builtin is invoked.
-If the command is not a recognized builtin, **Bibalve** searches each element of the **PATH** environmental variable for a directory containing an executable file by that name.
+If the command is not a recognized builtin, **Indomie** searches each element of the **PATH** environmental variable for a directory containing an executable file by that name.
 If either of the above searches was successful, the shell executes the named program with any given arguments.
 
 ### Flow chart.
@@ -105,7 +105,7 @@ If either of the above searches was successful, the shell executes the named pro
 
 | File Name                                | Description and contents                                                                                                                                                               |
 | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [man_1_simple_shell](man_1_simple_shell) | This is the manpage for the Bivalve shell, this will help us know how to use the shell and the many uses of it, in here we can find examples and the correct sintaxis of the commands. |
+| [man_1_simple_shell](man_1_simple_shell) | This is the manpage for the Indomie shell, this will help us know how to use the shell and the many uses of it, in here we can find examples and the correct sintaxis of the commands. |
 | [shell.h](shell.h)                       | This is the header file where we can find all the prototypes of our functions.                                                                                                         |
 | [01-prompt.c](01-prompt.c)               | main function - Prints the prompt in a loop and calls the functions to get an input line and handle the parameters.                                                                    |
 | [02-tokenize.c](02-tokenize.c)           | tokenize - Receives a line as an input and stores space separated tokens (strings)                                                                                                     |
