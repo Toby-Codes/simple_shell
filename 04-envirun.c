@@ -9,7 +9,7 @@ void _printenv(void)
 	int x;
 	size_t y;
 
-	for (x = 0; environ[x] != '\0'; x++)
+	for (x = 0; *environ[x] != '\0'; x++)
 	{
 		for (y = 0; environ[x][y] != '\0'; y++)
 		{
